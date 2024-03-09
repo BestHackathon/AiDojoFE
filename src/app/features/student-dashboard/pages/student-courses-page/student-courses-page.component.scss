@@ -1,0 +1,81 @@
+:host {
+    width: calc(100vw - 218px);
+    min-height: calc(100vh - 60px);
+    background-color: rgb(232, 234, 235);
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-top: 60px;
+    .courses-header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        width: calc(100% - 140px);
+        #courses-number {
+            font-size: 20px;
+        }
+        
+        #add-course {
+                width: 130px;
+                height: 30px;
+                
+                background-color: lightseagreen;
+                border: none;
+                
+                color: white;
+        }
+           
+    }
+    .courses-nav {
+        width: calc(100% - 140px);
+        margin-left: 70px;
+        margin-top: 10px;
+        min-height: 60px;
+        //@include horizontalyCenteredContent;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 13px;
+            }
+            select {
+                width: 250px;
+                height: 30px;
+            }
+        }
+        #searchbar {
+            height: 30px;
+            width: 300px;
+        }
+        .reset-filters {
+            //@include fullyCenteredContent;
+            border: none;
+            border-radius: 8px;
+            margin-top: 5px;
+            width: 80px;
+            margin-top: 15px;
+            height: 30px;
+            background-color: rgb(195, 92, 92);
+            
+            color: white;
+            font-size: 11px;
+        }
+        
+    }
+    .courses-grid {
+        margin-bottom: 100px;
+        row-gap: 20px;
+        margin-top: 20px;
+        //background-color: yellow;
+        margin-left: 50px;
+        width: calc(100% - 100px);
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 25%);
+    }
+}
