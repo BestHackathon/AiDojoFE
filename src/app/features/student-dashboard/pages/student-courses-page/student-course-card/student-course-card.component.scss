@@ -2,13 +2,16 @@
     width: 250px;
     height: 200px;
     border-radius: 10px;
-    background-color: rgb(122, 234, 156);
+    background-color: rgb(255, 255, 255);
     display: flex;
+    border: 1px solid lightgray;
     flex-direction: column;
     //justify-self: center;
     .img-holder {
-        width: 100%;
-        height: 100px;
+        width: 90%;
+        height: 90px;
+        margin-left: 5%;
+        margin-top: 10px;
         border-radius: 10px 10px 0 0;
         background: url("https://images.klipfolio.com/website/public/11f3da89-351a-4ca1-a59d-b6806b0fcec1/algorithm.jpg");
         background-size: contain;
@@ -21,18 +24,25 @@
         .course-card-name {
             margin-left: 10px;
             margin-top: 10px;
-
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .course-card-teacher {
+            margin-left: 10px;
+            //margin-top: 5px;
+            font-size: 14px;
+            color: rgb(105, 103, 103);
         }
         
         
     }
-    .course-card-data:hover {
-        cursor: pointer;
-            background-color: rgb(50, 147, 110);;
-        border-radius: 0 0 10px 10px;
-        
-        
-    }
+    
+    
+}
+:host:hover {
+    cursor: pointer;
+        background-color: rgb(169, 225, 204);
+    border-radius: 10px;
     
     
 }
