@@ -1,0 +1,24 @@
+:host {
+    width: calc(100vw - 220px);
+    min-height: calc(100vh - 60px);
+    //background-color: rgb(176, 200, 119);
+    display: flex;
+    
+    margin-left: 220px;
+    margin-top: 60px;
+    .lecture-window {
+        width: calc(100% - 320px);
+        height: 2000px;
+        display: flex;
+        background-color: rgb(146, 92, 92);
+    }
+    .lecture-menu {
+        width: 300px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: cadetblue;
+        margin-left: calc(100% - 520px);
+        position: fixed;
+    }
+}

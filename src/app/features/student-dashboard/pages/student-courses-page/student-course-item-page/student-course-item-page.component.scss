@@ -6,4 +6,39 @@
     flex-direction: column;
     margin-left: 220px;
     margin-top: 60px;
+    .course-header {
+        height: 100px;
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-top: 50px;
+        display: flex;
+        background-color: lightseagreen;
+    }
+    .lecture-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .lecture-list-item {
+            width: calc(100% - 200px);
+            margin-left: 50px;
+            height: 70px;
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            align-items: center;
+            .lecture-name {
+                margin-left: 30px;
+                width: 600px;
+                font-size: 22px;
+                font-weight: bold;
+
+            }
+            .lecture-pages {
+                font-size: 18px;
+                margin-left: 20px;
+            }
+        }
+    }
 }

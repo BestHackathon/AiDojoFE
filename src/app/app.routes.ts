@@ -7,6 +7,7 @@ import { StudentDashboardComponent } from './features/student-dashboard/student-
 import { StudentHomePageComponent } from './features/student-dashboard/pages/student-home-page/student-home-page.component';
 import { StudentCoursesPageComponent } from './features/student-dashboard/pages/student-courses-page/student-courses-page.component';
 import { StudentCourseItemPageComponent } from './features/student-dashboard/pages/student-courses-page/student-course-item-page/student-course-item-page.component';
+import { StudentLectureItemPageComponent } from './features/student-dashboard/pages/student-courses-page/student-lecture-item-page/student-lecture-item-page.component';
 
 export const routes: Routes = [
     {path: 'teacher', component: TeacherDashboardComponent, children: [
@@ -18,7 +19,10 @@ export const routes: Routes = [
         {path: 'home', component: StudentHomePageComponent},
         {path: 'courses', children: [
             {path: '',component: StudentCoursesPageComponent},
-            {path:'course', component: StudentCourseItemPageComponent}
+            {path:'course', children: [
+                {path:'',component: StudentCourseItemPageComponent},
+                {path:'lecture',component: StudentLectureItemPageComponent}
+            ]}
         ]},
         
     ]}
