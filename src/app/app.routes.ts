@@ -6,6 +6,7 @@ import { TeacherHomePageComponent } from './features/teacher-dashboard/pages/tea
 import { StudentDashboardComponent } from './features/student-dashboard/student-dashboard.component';
 import { StudentHomePageComponent } from './features/student-dashboard/pages/student-home-page/student-home-page.component';
 import { StudentCoursesPageComponent } from './features/student-dashboard/pages/student-courses-page/student-courses-page.component';
+import { StudentCourseItemPageComponent } from './features/student-dashboard/pages/student-courses-page/student-course-item-page/student-course-item-page.component';
 
 export const routes: Routes = [
     {path: 'teacher', component: TeacherDashboardComponent, children: [
@@ -15,6 +16,10 @@ export const routes: Routes = [
     ]},
     {path: 'student', component: StudentDashboardComponent, children: [
         {path: 'home', component: StudentHomePageComponent},
-        {path: 'courses', component: StudentCoursesPageComponent}
+        {path: 'courses', children: [
+            {path: '',component: StudentCoursesPageComponent},
+            {path:'course', component: StudentCourseItemPageComponent}
+        ]},
+        
     ]}
 ];
