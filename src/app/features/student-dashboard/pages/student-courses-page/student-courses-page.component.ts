@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { StudentCourseCardComponent } from "./student-course-card/student-course-card.component";
 import { RouterModule } from '@angular/router';
+
 
 @Component({
     selector: 'app-student-courses-page',
@@ -10,5 +11,4 @@ import { RouterModule } from '@angular/router';
     imports: [StudentCourseCardComponent, RouterModule]
 })
 export class StudentCoursesPageComponent {
-
 }

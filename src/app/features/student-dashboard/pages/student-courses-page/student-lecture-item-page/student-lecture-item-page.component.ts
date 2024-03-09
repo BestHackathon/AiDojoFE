@@ -6,6 +6,8 @@ import { QuizDialogComponent } from '../../../dialogs/quiz-dialog/quiz-dialog.co
 import { RouterModule } from '@angular/router';
 import { StartComponent } from '../../../dialogs/quiz-dialog/components/start/start.component';
 import { CommonModule } from '@angular/common';
+import { OpenSummaryService } from '../../../../../core/services/open-summary.service';
+import { SummaryDialogComponent } from '../../../dialogs/summary-dialog/summary-dialog.component';
 //import { PdfViewerComponent, PdfViewerModule } from 'ng2-pdf-viewer';
 
 
@@ -20,10 +22,17 @@ export class StudentLectureItemPageComponent {
 pdfSrc: any;
 
 
-  constructor(private openFlashcardsService: OpenFlashcardsService, public dialog: MatDialog) {}
+  constructor(private openFlashcardsService: OpenFlashcardsService,
+    private openSummaryService: OpenSummaryService,
+     public dialog: MatDialog) {}
 
   openFlashbacks(): void {
     const dialogRef = this.dialog.open(FlashcardsDialogComponent, {
+      
+    })
+  }
+  openSummary(): void {
+    const dialogRef = this.dialog.open(SummaryDialogComponent, {
       
     })
   }

@@ -98,8 +98,14 @@
                     margin-left: 10px;
                     display: flex;
                     flex-direction: column;
-                    .title {}
-                    .author {}
+                    .title {
+                        max-width: 50ch;
+                        font-size: 13px;
+                    }
+                    .author {
+                        font-size: 13px;
+
+                    }
                 }
             }
         }

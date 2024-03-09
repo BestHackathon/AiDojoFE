@@ -347,6 +347,7 @@
                         display: flex;
                         img {
                             width: 110px;
+                            border: 1px solid darkgrey;
                         }
                     }
                     .popular-book-data {
@@ -369,7 +370,7 @@
                         .popular-book-stats {
                             margin-left: 20px;
                             font-size: 13px;
-                            color: white;
+                            opacity: 0;
                         }
                         .view {
                             margin-top: 10px;
@@ -378,13 +379,15 @@
                             height: 25px;
                             border-radius: 15px;
                             border: none;
-                            background-color: lightgray;
+                            background-color: rgb(131, 226, 136);
+                            color: white;
                         }
                     }
                     
                 }
                 .popular-book-item:hover {
-                    background-color: lightblue;
+                    background-color: rgb(202, 247, 220);
+                    cursor: pointer;
                 }
             }
         }
