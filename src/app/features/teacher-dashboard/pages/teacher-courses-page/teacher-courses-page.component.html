@@ -1,4 +1,35 @@
-<div class="courses-nav"></div>
+
+
+<div class="courses-header">
+    <p id="courses-number">180 Courses</p>
+    <button id="add-course">Add Course</button>
+</div>
+<div class="courses-nav">
+    <div class="form-field">
+        <label for="category-select">Category</label>
+        <select name="category-select" id="category-select">
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <label for="order-select">Order by</label>
+        <select name="order-select" id="order-select">
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <label for="searchbar">Search</label>
+        <input type="search" name="searchbar" id="searchbar">
+    </div>
+    <button class="reset-filters">RESET</button>
+</div>
+
 <div class="courses-grid">
     <app-teacher-course-card></app-teacher-course-card>
     <app-teacher-course-card></app-teacher-course-card>
