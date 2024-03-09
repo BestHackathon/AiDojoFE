@@ -8,8 +8,10 @@ import { StudentHomePageComponent } from './features/student-dashboard/pages/stu
 import { StudentCoursesPageComponent } from './features/student-dashboard/pages/student-courses-page/student-courses-page.component';
 import { StudentCourseItemPageComponent } from './features/student-dashboard/pages/student-courses-page/student-course-item-page/student-course-item-page.component';
 import { StudentLectureItemPageComponent } from './features/student-dashboard/pages/student-courses-page/student-lecture-item-page/student-lecture-item-page.component';
+import { LoginPageComponent } from './core/auth/components/login-page/login-page.component';
 
 export const routes: Routes = [
+    {path:'',redirectTo: '/login', pathMatch:'full' },
     {path: 'teacher', component: TeacherDashboardComponent, children: [
         {path: 'home', component: TeacherHomePageComponent},
         {path: 'courses', component: TeacherCoursesPageComponent},
@@ -25,5 +27,6 @@ export const routes: Routes = [
             ]}
         ]},
         
-    ]}
+    ]},
+    {path:'login', component: LoginPageComponent}
 ];

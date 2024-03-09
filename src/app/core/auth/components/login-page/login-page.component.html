@@ -1,0 +1,7 @@
+<div class="login-box">
+    <select name="role-picker" id="role-picker" [(ngModel)]="selectedRole">
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+    </select>
+    <button class="login-submit" (click)="login()">Login</button>
+</div>
