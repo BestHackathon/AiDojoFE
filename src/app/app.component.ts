@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TeacherDashboardComponent } from "./features/teacher-dashboard/teacher-dashboard.component";
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+//import { IgxCarouselModule } from 'igniteui-angular';
 //import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @Component({
