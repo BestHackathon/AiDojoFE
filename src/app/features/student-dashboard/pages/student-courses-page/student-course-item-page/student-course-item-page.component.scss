@@ -1,5 +1,5 @@
 :host {
-    width: calc(100vw - 220px);
+    width: calc(100vw - 237px);
     min-height: calc(100vh - 60px);
     background-color: rgb(232, 234, 235);
     display: flex;
@@ -7,18 +7,44 @@
     margin-left: 220px;
     margin-top: 60px;
     .course-header {
-        height: 100px;
-        width: calc(100% - 100px);
-        margin-left: 50px;
-        margin-top: 50px;
+        height: 200px;
+        //width: calc(100% - 100px);
+        //margin-left: 50px;
+        //margin-top: 50px;
+        width: 100%;
         display: flex;
         background-color: lightseagreen;
+        .course-data {
+            margin-left: 50px;
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            .course-title {
+                font-size: 35px;
+                font-weight: bold;
+                color: rgb(201, 251, 255);
+            }
+            .course-author {
+                font-size: 20px;
+            }
+        }
+    }
+    .lectures-header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        .lecture-count {
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 25px;
+        }
     }
     .lecture-list {
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-bottom: 100px;
         .lecture-list-item {
             cursor: pointer;
 
@@ -28,23 +54,51 @@
             display: flex;
             background-color: white;
             border-radius: 8px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             align-items: center;
+            .lecture-num {
+                margin-left: 20px;
+                width: 30px;
+            }
             .lecture-name {
-                margin-left: 30px;
-                width: 600px;
-                font-size: 22px;
+                margin-left: 10px;
+                width: 800px;
+                font-size: 20px;
                 font-weight: bold;
-
+                color: rgb(58, 65, 74);
             }
             .lecture-pages {
-                font-size: 18px;
-                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                width: 70px;
+                svg {
+                    height: 20px;
+                    fill: rgb(91, 90, 90);
+                    
+                }
+                p {
+                    margin-left: 5px;
+                    font-size: 15px;
+                }
+            }
+            .lecture-time {
+                display: flex;
+                align-items: center;
+                width: 100px;
+                svg {
+                    height: 20px;
+                    fill: rgb(91, 90, 90);
+
+                }
+                p {
+                    margin-left: 5px;
+                    font-size: 15px;
+                }
             }
             
         }
         .lecture-list-item:hover {
-            background-color: burlywood;
+            background-color: rgb(156, 207, 215);
         }
     }
 }

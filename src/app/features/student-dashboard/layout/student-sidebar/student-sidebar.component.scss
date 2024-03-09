@@ -77,19 +77,20 @@
         }
     }
     .sidebar-item:hover {
-        background-color: lightblue;
+        background-color: rgb(173, 230, 197);
     }
 }
 .active {
     
     //background-color: lightblue;
     .sidebar-item {
-        background-color: rgb(101, 217, 255);
+        background-color: rgb(166, 209, 194);
     }
 }
 .active :hover {
     .sidebar-item {
-        background-color: rgb(101, 217, 255);
+        background-color: rgb(173, 230, 197);
+        
     }
 }
 
