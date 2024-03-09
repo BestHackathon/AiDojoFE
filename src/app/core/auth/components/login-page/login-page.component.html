@@ -1,9 +1,20 @@
 <div class="login-box">
-    <input type="text">
-    <input type="password" name="" id="">
-    <select name="role-picker" id="role-picker" [(ngModel)]="selectedRole">
-        <option value="teacher">Teacher</option>
-        <option value="student">Student</option>
-    </select>
+    <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Ex. User" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Ex. Pizza" value="">
+      </mat-form-field>
+
+      
+        <select placeholder="Role" matNativeControl [(ngModel)]="selectedRole">
+            <option selected value="" >Select role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            
+          </select>
+      
     <button class="login-submit" (click)="login()">Login</button>
 </div>

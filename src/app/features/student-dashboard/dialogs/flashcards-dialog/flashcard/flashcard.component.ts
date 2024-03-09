@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-flashcard',
@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './flashcard.component.scss'
 })
 export class FlashcardComponent {
+  @Input() question: string = 'Ovo je jedno veliko pitanje?';
+  @Input() answer: string = 'Ovo je jedan jos veci odgovor';
   isFlipped = false;
 
   flip() {

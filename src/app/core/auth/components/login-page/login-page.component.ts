@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,FormsModule, MatFormFieldModule, MatInputModule],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss'
 })

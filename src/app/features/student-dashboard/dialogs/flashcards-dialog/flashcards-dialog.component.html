@@ -1,6 +1,19 @@
 <div class="flashcards-header">
-    <button class="close" (click)="closeDialog()"></button>
+    <!--<button class="close" (click)="closeDialog()"></button>-->
 </div>
 <div class="flashcards-window">
-    <app-flashcard></app-flashcard>
+    <div class="flashcard-heading">
+        <button class="reset">
+            <p>Reset</p>
+        </button>
+    </div>
+    <app-flashcard [question]="flashcardList.unlearnedFlashcards[id2 - 2].question" [answer]="flashcardList.unlearnedFlashcards[id2 - 2].answer"></app-flashcard>
+    <div class="flashcard-nav">
+        <button (click)="clickFunction()" class="incorrect">
+            <p>Incorrect</p>
+        </button>
+        <button (click)="clickFunction()" class="correct">
+            <p>Correct</p>
+        </button>
+    </div>
 </div>

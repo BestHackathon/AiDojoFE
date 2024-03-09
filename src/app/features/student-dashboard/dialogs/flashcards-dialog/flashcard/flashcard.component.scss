@@ -1,6 +1,9 @@
 :host {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
     .container {
-        width: 500px;
+        width: 550px;
         height: 350px;
         perspective: 800px;
     }
@@ -9,22 +12,32 @@
         height: 100%;
         width: 100%;
         position: relative;
-        transition: transform 1500ms;
+        transition: transform 1000ms;
         transform-style: preserve-3d;
     }
     
     .front,
     .back {
+        background-color: rgb(106, 198, 143);
         height: 100%;
         width: 100%;
         border-radius: 2rem;
-        box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+        box-shadow: 0 0 5px 2px rgba(157, 213, 143, 0.25);
         position: absolute;
         backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            width: 80%;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
     
     .front {
-        background-image: url(https://source.unsplash.com/random/350x500);
+        
     }
     
     .back {

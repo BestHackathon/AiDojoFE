@@ -1,9 +1,10 @@
 <div (click)="flip()" class="container" [class.flipped]="isFlipped">
     <div class="card">
-        <div class="front"></div>
+        <div class="front">
+            <p class="question">{{question}}</p>
+        </div>
         <div class="back">
-            <h1>Back of Card</h1>
-            <p>Additional info on the back of the card</p>
+            <p class="response">{{answer}}</p>
         </div>
     </div>
 </div>
