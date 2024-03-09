@@ -1,25 +1,25 @@
 :host {
-    width: calc(100vw - 250px);
+    width: calc(100vw - 220px);
     min-height: calc(100vh - 60px);
-    //background-color: rgb(176, 200, 119);
+    background-color: rgb(176, 200, 119);
     display: flex;
     
     margin-left: 220px;
     margin-top: 60px;
     .lecture-window {
         width: calc(100% - 320px);
-        height: 2000px;
-        display: flex;
-        background-color: rgb(212, 242, 198);
+        height: 100vh;
+        //display: flex;
+        //background-color: rgb(22, 13, 84);
     }
     .lecture-menu {
-        width: 300px;
+        width: 320px;
         min-height: 100%;
         display: flex;
         flex-direction: column;
         background-color: rgb(189, 245, 208);
-        margin-left: calc(100% - 520px);
-        position: fixed;
+        //margin-left: calc(100% - 520px);
+        //--position: fixed;
         border-left: 1px solid grey;
         .buttons {
             display: flex;
