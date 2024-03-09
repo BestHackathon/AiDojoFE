@@ -1,14 +1,20 @@
 :host {
     width: calc(100vw - 220px);
     min-height: calc(100vh - 60px);
-    background-color: rgb(176, 200, 119);
+    background-color: #f0f1f3;
     display: flex;
     
     margin-left: 220px;
     margin-top: 60px;
     .lecture-window {
         width: calc(100% - 320px);
-        height: 100vh;
+        height: calc(100vh - 60px);
+        object {
+            width: 90%;
+            height: 90vh;
+            margin-left: 5%;
+            margin-top: 20px;
+        }
         //display: flex;
         //background-color: rgb(22, 13, 84);
     }
@@ -17,7 +23,9 @@
         min-height: 100%;
         display: flex;
         flex-direction: column;
-        background-color: rgb(189, 245, 208);
+    background-color: #f0f1f3;
+
+        //background-color: rgb(189, 245, 208);
         //margin-left: calc(100% - 520px);
         //--position: fixed;
         border-left: 1px solid grey;
@@ -32,19 +40,33 @@
                 border-radius: 12px;
                 margin-bottom: 10px;
                 border: 1px solid grey;
-                background-color: lightgreen;
+                //background-color: lightgreen;
                 display: flex;
                 align-items: center;
                 svg {
                     width: 25px;
                     height: 25px;
                     margin-left: 20px;
+                    fill: rgb(95, 95, 95);
                 }
                 p {
                     margin-left: 20px;
                     font-size: 17px;
+                    color: rgb(95, 95, 95);
+
                 }
                 cursor: pointer;
+            }
+            button:hover {
+                border: none;
+                background-color: lightseagreen;
+                svg {
+                    fill: white;
+
+                }
+                p {
+                    color: white;
+                }
             }
         }
     }

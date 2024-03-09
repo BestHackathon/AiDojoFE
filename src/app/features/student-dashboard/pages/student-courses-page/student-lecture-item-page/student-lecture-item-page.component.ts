@@ -3,17 +3,18 @@ import { OpenFlashcardsService } from '../../../../../core/services/open-flashca
 import { MatDialog } from '@angular/material/dialog';
 import { FlashcardsDialogComponent } from '../../../dialogs/flashcards-dialog/flashcards-dialog.component';
 import { QuizDialogComponent } from '../../../dialogs/quiz-dialog/quiz-dialog.component';
-import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-//import { PdfViewerModule } from 'ng2-pdf-viewer';
+//import { PdfViewerComponent, PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 @Component({
   selector: 'app-student-lecture-item-page',
   standalone: true,
-  imports: [NgxExtendedPdfViewerModule],
+  imports: [],
   templateUrl: './student-lecture-item-page.component.html',
   styleUrl: './student-lecture-item-page.component.scss'
 })
 export class StudentLectureItemPageComponent {
+pdfSrc: any;
 
 
   constructor(private openFlashcardsService: OpenFlashcardsService, public dialog: MatDialog) {}

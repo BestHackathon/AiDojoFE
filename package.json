@@ -25,7 +25,7 @@
     "@angular/ssr": "^17.2.1",
     "canvas": "^2.11.2",
     "express": "^4.18.2",
-    "ng2-pdf-viewer": "^10.0.0",
+    "ng2-pdf-viewer": "^7.0.2",
     "ngx-extended-pdf-viewer": "^19.4.0-alpha.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
