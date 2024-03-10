@@ -40,9 +40,12 @@ Contributions to AiDojo are welcome! If you'd like to contribute, please follow 
 5. Push to the branch: `git push origin feature/my-feature`
 6. Submit a pull request.
 
-## License
+## Technologies
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+- ChatGPT
+- Angular
+- Node.js
+- MySQL
 
 ## Contact
 
@@ -52,3 +55,4 @@ For any inquiries or feedback, please contact us:
 - [Aida Zametica](https://github.com/xxaidazameticaxx)
 - [Edis Jašarević](https://github.com/jasarevicedis)
 - [Eman Alibalić](https://github.com/EmanMane)
+  
