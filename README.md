@@ -1,27 +1,58 @@
-# AiLearnerFE
+# AiDojo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+AiDojo is a platform designed to assist students in learning subjects more efficiently using AI-driven techniques such as flashcard learning, quizzes and lecture summarization.
 
-## Development server
+![AiDojo Logo](https://drive.usercontent.google.com/download?id=1dhGo1idPEsEA61tbXme9itFhm8eCFnrD&export=view&authuser=0)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Flashcard Learning**: AiDojo integrates a flashcard learning method into every subject, using AI algorithms generated from validated learning materials provided by professors.
+- **Lecture Summarization**: The platform uses AI algorithms to summarize lectures and educational materials, providing students with concise summaries .
+- **Progress Tracking**: AiDojo tracks students' progress and provides insights into their learning habits and areas that need improvement.
+- **Interactive Quizzes**: Engage in interactive quizzes generated based on the user's learning materials to reinforce learning.
+- **Recommendation System**: Enabling the finding of reliable literature for deepening the knowledge acquired through automated learning techniques.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+To install AiDojo, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository: `https://github.com/BestHackathon/AiDojo.git`
+2. Navigate to the project directory: `cd AiDojo`
+3. Install dependencies: `npm install`
+4. Start the application: `npm start`
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Log in into your account on AiDojo.
+2. Explore different subjects and topics available on the platform.
+3. Choose from a variety of available interactive learning methods.
+4. Track your progress and adjust your learning strategy accordingly.
+5. Engage in interactive quizzes to reinforce your learning.
 
-## Running end-to-end tests
+## Contributing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contributions to AiDojo are welcome! If you'd like to contribute, please follow these steps:
 
-## Further help
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/my-feature`
+3. Make your changes.
+4. Commit your changes: `git commit -am 'Add new feature'`
+5. Push to the branch: `git push origin feature/my-feature`
+6. Submit a pull request.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies
+
+- ChatGPT
+- Angular
+- Node.js
+- MySQL
+
+## Contact
+
+For any inquiries or feedback, please contact us:
+- [Ahmed Ljubunčić](https://github.com/aljubuncic)
+- [Lejla Heleg](https://github.com/lheleg)
+- [Aida Zametica](https://github.com/xxaidazameticaxx)
+- [Edis Jašarević](https://github.com/jasarevicedis)
+- [Eman Alibalić](https://github.com/EmanMane)
+  
