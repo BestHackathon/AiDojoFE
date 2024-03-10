@@ -1,20 +1,21 @@
-<div class="login-box">
-    <mat-form-field class="example-full-width">
-        <mat-label>Username</mat-label>
-        <input matInput placeholder="Ex. User" value="">
-      </mat-form-field>
-      <mat-form-field class="example-full-width">
-        <mat-label>Password</mat-label>
-        <input type="password" matInput placeholder="Ex. Pizza" value="">
-      </mat-form-field>
-
-      
-        <select   [(ngModel)]="selectedRole">
-            <option value="1" >Select role</option>
-            <option value="student" selected>Student</option>
-            <option value="teacher">Teacher</option>
-            
-          </select>
-      
-    <button class="login-submit" (click)="login()">Login</button>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <select name="selectedRole" id="selectedRole" [(ngModel)]="selectedRole">
+        <option value="student" selected>Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+      <button (click)="login()">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
 </div>
