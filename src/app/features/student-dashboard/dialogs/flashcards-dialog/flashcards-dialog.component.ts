@@ -15,7 +15,8 @@ import { Router } from '@angular/router';
 export class FlashcardsDialogComponent implements OnInit {
   id1: number = 1;
   id2: number = 2;
-
+  current: number =1;
+  total: number = 0;
   constructor(private dialogRef: MatDialogRef<FlashcardsDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private apiService: ApiFlashcardsService, private router: Router
@@ -28,13 +29,16 @@ export class FlashcardsDialogComponent implements OnInit {
   flashcardList: any;
   clickFunction(): void {
     this.id2 += 1;
+    this.current++;
     this.apiService.getFlashcards(this.id1,this.id2).subscribe((data) => {
       this.flashcardList = data;
     })
   }
   ngOnInit(): void {
+
     this.apiService.getFlashcards(this.id1,this.id2).subscribe((data) => {
       this.flashcardList = data;
+      this.total = this.flashcardList.length();
     })
   }
   

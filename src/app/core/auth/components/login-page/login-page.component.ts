@@ -13,7 +13,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrl: './login-page.component.scss'
 })
 export class LoginPageComponent {
-  selectedRole: string | undefined;
+  selectedRole: string | undefined = 'student';
 
   constructor(private authService: AuthService, private router: Router) {}
 

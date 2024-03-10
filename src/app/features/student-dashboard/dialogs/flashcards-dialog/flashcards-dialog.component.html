@@ -6,8 +6,13 @@
         <button class="reset">
             <p>Reset</p>
         </button>
+        <div class="counter-div">
+            <p class="card-txt">Card </p>
+            <p class="current">{{current}}</p>
+            
+        </div>
     </div>
-    <app-flashcard [question]="flashcardList.unlearnedFlashcards[id2 - 2].question" [answer]="flashcardList.unlearnedFlashcards[id2 - 2].answer"></app-flashcard>
+    <app-flashcard [question]="flashcardList.unlearnedFlashcards[current -1].question" [answer]="flashcardList.unlearnedFlashcards[current - 1].answer"></app-flashcard>
     <div class="flashcard-nav">
         <button (click)="clickFunction()" class="incorrect">
             <p>Incorrect</p>
