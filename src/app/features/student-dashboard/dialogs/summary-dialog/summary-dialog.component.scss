@@ -20,6 +20,16 @@
         display: flex;
         overflow-y: auto;
         flex-direction: column;
+        article {
+            h3 {
+                color: rgb(63, 80, 111);
+                margin-bottom: 10px;
+            }
+        }
+        h3 {
+            color: rgb(63, 80, 111);
+            margin-bottom: 10px;
+        }
         .summary-title {
             margin-left: 5%;
             margin-top: 20px;
@@ -42,5 +52,8 @@
             }
         }
     }
-    
+    h3 {
+        color: rgb(63, 80, 111);
+        margin-bottom: 10px;
+    }
 }

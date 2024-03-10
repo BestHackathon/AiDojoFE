@@ -12,6 +12,6 @@ export class ApiSummaryService {
   constructor(private http: HttpClient) {}
 
   getSummary(id: number): Observable<any> {
-    return this.http.get(`${this.apiRoute}/${id}`);
+    return this.http.get(`${this.apiRoute}/${id}` ,{ responseType: 'text' });
   }
 }

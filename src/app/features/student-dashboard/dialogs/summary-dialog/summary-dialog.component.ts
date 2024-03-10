@@ -9,7 +9,7 @@ import { ApiSummaryService } from '../../../../core/services/api-summary.service
   styleUrl: './summary-dialog.component.scss'
 })
 export class SummaryDialogComponent implements OnInit {
-  summary: any;
+  summary: string = '';
   id: number = 1;
   constructor(private apiSummary: ApiSummaryService) {}
   ngOnInit(): void {
